@@ -1,0 +1,268 @@
+[gd_scene load_steps=15 format=3 uid="uid://q2tq0p6cm8a5"]
+
+[ext_resource type="Script" uid="uid://d0gwgwmqvn34" path="res://buy_basic.gd" id="1_ga002"]
+[ext_resource type="Texture2D" uid="uid://did2a0vtygha0" path="res://SPin Wheel For Premium.png" id="2_cu0ei"]
+[ext_resource type="Texture2D" uid="uid://d3kuileey1dwb" path="res://TEMU ad.jpg" id="3_cu0ei"]
+
+[sub_resource type="Animation" id="Animation_syyav"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SPinWheelForPremium:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_4lamc"]
+resource_name = "SPin1"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SPinWheelForPremium:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 56.470127]
+}
+
+[sub_resource type="Animation" id="Animation_7ygnh"]
+resource_name = "Spin2"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SPinWheelForPremium:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 102.65154]
+}
+
+[sub_resource type="Animation" id="Animation_6ro7b"]
+resource_name = "Spin3"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SPinWheelForPremium:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 110.20009]
+}
+
+[sub_resource type="Animation" id="Animation_1bq6j"]
+resource_name = "Spin4"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SPinWheelForPremium:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 168.02284]
+}
+
+[sub_resource type="Animation" id="Animation_10euu"]
+resource_name = "SpinWind"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SPinWheelForPremium:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 176.82803]
+}
+
+[sub_resource type="Animation" id="Animation_nqb6a"]
+resource_name = "idle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SPinWheelForPremium:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.2831855]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ro7b"]
+_data = {
+&"RESET": SubResource("Animation_syyav"),
+&"SPin1": SubResource("Animation_4lamc"),
+&"Spin2": SubResource("Animation_7ygnh"),
+&"Spin3": SubResource("Animation_6ro7b"),
+&"Spin4": SubResource("Animation_1bq6j"),
+&"SpinWind": SubResource("Animation_10euu"),
+&"idle": SubResource("Animation_nqb6a")
+}
+
+[sub_resource type="PrismMesh" id="PrismMesh_1bq6j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nqb6a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ga002"]
+
+[node name="Buy Basic" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ga002")
+
+[node name="Buy" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_right = 74.0
+offset_bottom = 49.0
+grow_horizontal = 2
+text = "Spotifly Basic Pack:
+($500)"
+horizontal_alignment = 1
+
+[node name="SPinWheelForPremium" type="Sprite2D" parent="."]
+position = Vector2(578, 246)
+scale = Vector2(0.40487796, 0.40487796)
+texture = ExtResource("2_cu0ei")
+
+[node name="Label" type="Label" parent="SPinWheelForPremium"]
+offset_left = -221.03374
+offset_top = 195.67061
+offset_right = -91.03374
+offset_bottom = 218.67061
+rotation = -1.5707964
+text = "+ Negative AURA"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_6ro7b")
+}
+
+[node name="Pointer" type="MeshInstance2D" parent="."]
+position = Vector2(790, 234.99998)
+rotation = 1.5707964
+scale = Vector2(61.471874, 78.5)
+mesh = SubResource("PrismMesh_1bq6j")
+
+[node name="Buy2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -104.5
+offset_top = -99.0
+offset_right = 104.5
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nqb6a")
+text = "Buy $500"
+
+[node name="Money" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Bank Account:"
+
+[node name="Spin cooldown" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_bottom = 8.0
+grow_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ga002")
+text = "Back"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TemuAd" type="Sprite2D" parent="Control"]
+position = Vector2(47, 324)
+scale = Vector2(0.137861, 1.5896556)
+texture = ExtResource("3_cu0ei")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="TemuAd" type="Sprite2D" parent="Control2"]
+position = Vector2(-50, 3)
+scale = Vector2(0.137861, 1.5896556)
+texture = ExtResource("3_cu0ei")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="LinkButton2" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 38.0
+offset_right = 115.0
+offset_bottom = 625.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton3" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 1034.0
+offset_top = 34.0
+offset_right = 1144.0
+offset_bottom = 621.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[connection signal="pressed" from="Buy2" to="." method="_on_buy_2_pressed"]
+[connection signal="timeout" from="Spin cooldown" to="." method="_on_spin_cooldown_timeout"]
+[connection signal="pressed" from="Back" to="." method="_on_button_pressed"]

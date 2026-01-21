@@ -1,0 +1,154 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpuup3ib325ad"]
+
+[ext_resource type="Script" uid="uid://6vcgiwregrfo" path="res://get_spotifly_premium.gd" id="1_qh7oh"]
+[ext_resource type="Texture2D" uid="uid://d3kuileey1dwb" path="res://TEMU ad.jpg" id="2_8et4v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qh7oh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8et4v"]
+
+[node name="Get Spotifly Premium" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qh7oh")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TemuAd" type="Sprite2D" parent="Control"]
+position = Vector2(525.00006, 336.00003)
+scale = Vector2(5.815641, 1.8893704)
+texture = ExtResource("2_8et4v")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="Ad Hitbox" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LinkButton" type="LinkButton" parent="Ad Hitbox"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 439.0
+offset_right = 1139.0
+offset_bottom = 636.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton2" type="LinkButton" parent="Ad Hitbox"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 83.0
+offset_right = 221.0
+offset_bottom = 418.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton4" type="LinkButton" parent="Ad Hitbox"]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 17.0
+offset_right = 435.0
+offset_bottom = 145.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton5" type="LinkButton" parent="Ad Hitbox"]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 17.0
+offset_right = 963.0
+offset_bottom = 145.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton3" type="LinkButton" parent="Ad Hitbox"]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 15.0
+offset_right = 1152.0
+offset_bottom = 428.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.5
+offset_right = 64.5
+offset_bottom = 23.0
+grow_horizontal = 2
+scale = Vector2(1.5395477, 4.9546795)
+text = "ADVERTISEMENT"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -310.5
+offset_top = -159.0
+offset_right = 310.5
+offset_bottom = -117.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Get Spotifly Premium PleasE I NeeD MonEy"
+
+[node name="Yes" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -333.5
+offset_top = -107.75
+offset_right = 333.5
+offset_bottom = 107.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 100
+text = "Yes"
+
+[node name="No" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -57.0
+offset_right = 17.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qh7oh")
+text = "No"
+
+[node name="X" type="Button" parent="."]
+layout_mode = 1
+offset_right = 18.0
+offset_bottom = 31.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8et4v")
+text = "X"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[connection signal="pressed" from="Yes" to="." method="_on_yes_pressed"]
+[connection signal="mouse_entered" from="No" to="." method="_on_no_mouse_entered"]
+[connection signal="pressed" from="X" to="." method="_on_x_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

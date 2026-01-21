@@ -1,0 +1,118 @@
+[gd_scene load_steps=3 format=3 uid="uid://blqduwb32nhd7"]
+
+[ext_resource type="Script" uid="uid://clexe2fr5oln0" path="res://spotifly.gd" id="1_38noe"]
+[ext_resource type="Texture2D" uid="uid://d3kuileey1dwb" path="res://TEMU ad.jpg" id="2_7b6f2"]
+
+[node name="Spotifly" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_38noe")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Sorry Bro We Don't Have Songs yet.
+Stay sigma"
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Back"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TemuAd" type="Sprite2D" parent="Control"]
+position = Vector2(18.999998, -3.0000076)
+scale = Vector2(1.829698, 0.29092175)
+texture = ExtResource("2_7b6f2")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="TemuAd" type="Sprite2D" parent="Control2"]
+position = Vector2(65.499985, -24.499992)
+scale = Vector2(0.24843752, 1.5658264)
+texture = ExtResource("2_7b6f2")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="Control3" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="TemuAd" type="Sprite2D" parent="Control3"]
+position = Vector2(-32.000015, 10.250023)
+scale = Vector2(0.24843752, 1.3795519)
+texture = ExtResource("2_7b6f2")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="LinkButton2" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 57.0
+offset_right = 1153.0
+offset_bottom = 653.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton3" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -2.0
+offset_right = 141.0
+offset_bottom = 182.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

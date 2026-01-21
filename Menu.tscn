@@ -1,0 +1,191 @@
+[gd_scene load_steps=7 format=3 uid="uid://bcy68x2i1whn2"]
+
+[ext_resource type="Script" uid="uid://blbyf0olakybk" path="res://menu.gd" id="1_5yleq"]
+[ext_resource type="Texture2D" uid="uid://d3kuileey1dwb" path="res://TEMU ad.jpg" id="1_uubjt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uchyk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5yleq"]
+bg_color = Color(0.84060377, 0.5139841, 7.70092e-07, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ylpcl"]
+bg_color = Color(0.8392157, 0.5137255, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cx167"]
+bg_color = Color(0.7647059, 0.6666667, 0, 1)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5yleq")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -573.0
+offset_top = -305.0
+offset_right = 573.0
+offset_bottom = -236.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Spotifly"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -574.0
+offset_top = -46.5
+offset_right = 572.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Listen" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uchyk")
+text = "Start Listening To Beuciful Music"
+
+[node name="Premium" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_5yleq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ylpcl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cx167")
+text = "Get Spotifly Premium"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uchyk")
+text = "Rage Quit"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TemuAd" type="Sprite2D" parent="Control"]
+position = Vector2(18.999998, -3.0000076)
+scale = Vector2(1.829698, 0.29092175)
+texture = ExtResource("1_uubjt")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="TemuAd" type="Sprite2D" parent="Control2"]
+position = Vector2(71, -181.00002)
+scale = Vector2(0.19352494, 0.52278054)
+texture = ExtResource("1_uubjt")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="Control3" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="TemuAd" type="Sprite2D" parent="Control3"]
+position = Vector2(-37, -183.00002)
+scale = Vector2(0.19352494, 0.52278054)
+texture = ExtResource("1_uubjt")
+region_enabled = true
+region_rect = Rect2(0, 60.338882, 640, 357.39185)
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 593.0
+offset_right = 134.0
+offset_bottom = 616.0
+text = "ADVERTISEMENT"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 9.0
+offset_top = -319.0
+offset_right = 138.0
+offset_bottom = -296.0
+grow_vertical = 2
+text = "ADVERTISEMENT"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -142.0
+offset_top = -321.0
+offset_right = -13.0
+offset_bottom = -298.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "ADVERTISEMENT"
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 1.0
+offset_right = 188.0
+offset_bottom = 262.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton2" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 945.0
+offset_right = 1139.0
+offset_bottom = 252.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[node name="LinkButton3" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 482.0
+offset_right = 1161.0
+offset_bottom = 652.0
+uri = "https://www.temu.com/ul/kuiper/un2.html?_p_rfs=1&_p_rfs=1&subj=un-search-web&_p_jump_id=960&_x_vst_scene=adg&locale_override=175~en~RSD&search_key=Temu&_x_ads_channel=google&_x_ads_sub_channel=search&adg_ctx=m-7b0028eb&_x_ads_account=5512795647&_x_ads_set=21922252708&_x_ads_id=171343005795&_x_ads_creative_id=721860628484&_x_ns_source=g&_x_ns_gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE&_x_ns_placement=&_x_ns_match_type=e&_x_ns_ad_position=&_x_ns_product_id=&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkEKCQiA7LzLBhDXARIwAI9LI4I6mM-CbbQuWlnQBWZLIudo0TE-5yYugnhcLr_F-Ej1-NE6QSUjze1diil5GgJxuQ&_x_ns_gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&_x_ns_keyword=temu&_x_ns_targetid=kwd-4583699489&_x_ns_extensionid=&gad_source=1&gad_campaignid=21922252708&gbraid=0AAAAAo4mICGKw0SF98uNrZNSYD3sx8XS1&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7-VHFQGpA-3mRG7lsum2qcj_UdhHaPxACxB6C6_NuKRGx1rNvu20MBoC5rgQAvD_BwE"
+
+[connection signal="pressed" from="VBoxContainer/Listen" to="." method="_on_listen_pressed"]
+[connection signal="pressed" from="VBoxContainer/Premium" to="." method="_on_premium_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
